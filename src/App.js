@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import SearchBar from './components/Header/NavBar/SearchBar';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello, World</h1>
+      <SearchBar/>
     </div>
   );
 }

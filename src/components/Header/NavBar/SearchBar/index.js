@@ -1,8 +1,11 @@
 import './style.css'
 
-function SearchBar(){
+function SearchBar() {
     return (
-        <input></input>
+        <div>
+            <label>Teste</label>
+            <input placeholder='Pesquise um anime' ></input>
+        </div>
     )
 }
 
