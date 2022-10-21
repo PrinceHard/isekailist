@@ -3,7 +3,7 @@ import SearchBar from './components/Header/NavBar/SearchBar';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <SearchBar/>
     </div>
   );

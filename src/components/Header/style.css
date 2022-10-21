@@ -1,0 +1,10 @@
+.container{
+    text-align: center;   
+    display: flex;
+    justify-content: center;
+}
+.imgBanner{
+    width: 100vw;
+    height: 80vh;
+    z-index: -1;
+}
