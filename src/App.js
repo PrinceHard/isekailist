@@ -1,10 +1,10 @@
 import './App.css';
-import SearchBar from './components/Header/NavBar/SearchBar';
+import Header from './components/Header';
 
 function App() {
   return (
     <div>
-      <SearchBar/>
+      <Header/>
     </div>
   );
 }

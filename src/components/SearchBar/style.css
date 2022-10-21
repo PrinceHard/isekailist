@@ -1,6 +1,6 @@
 .searchBar{
     margin-top: 20px;
-    width: 600px;
+    width: 30%;
     height: 15px;
     padding: 1rem;
     border: 2px solid black;
@@ -9,5 +9,6 @@
     position: absolute;
     border-radius: 0.5rem;
     outline: none;
-    color: white;
+    color: black;
+    margin-left: 100px;
 }
