@@ -1,9 +1,9 @@
 @charset "UTF-8";
 .Banner{
-    background-image: url(../../assets/image/Banner.jpg);
-    background-repeat: repeat-x;
-    width: 100vw;
-    height: 800px;
+    background-image: url(../../assets/image/Banner.jpg); /*  imagem tem q ter largura 2000x altura835*/
+    background-repeat: no-repeat;
+    width: 2000px;
+    height: 835px;
     background-position: center top;
     background-attachment: fixed;
 }
