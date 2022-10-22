@@ -9,16 +9,19 @@ function NavBar() {
                 <img src={Logo}></img>
                 <h1>SekaiList</h1>
             </div>
-            <div className='container'>
+            <div>
                 <SearchBar />
-                <div className='menu'>
-                    <ul>
-                        <li><a href="#">Animes</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Mangás</a></li>
-                    </ul>
-                </div>
+            </div>
+            <div className='menu'>
+                <ul>
+                    <li><a href="#">Animes</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Mangás</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                </ul>
             </div>
         </nav>
     )
