@@ -27,13 +27,18 @@ ul{
 }
 ul > li > a{
     text-decoration: none;
-    color: black;
+    color: rgb(0, 255, 115);
     margin-right: 1rem;
+}
+ul > li > a:hover{
+    background-color: rgba(128, 128, 128, 0.705);
+    border-radius: 5px;
 }
 .logo{
     display: flex;
-    color: black;
+    color: white;
     align-items: center;
+    
 }
 .menu{
     align-items: center;
