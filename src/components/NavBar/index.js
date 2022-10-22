@@ -1,25 +1,23 @@
 import SearchBar from '../SearchBar'
 import Logo from '../../assets/image/Logo100px.png'
 import "./style.css"
+
 function NavBar() {
     return (
         <nav>
             <div className='logo'>
-                <img src={Logo} className='img'></img>
-                <h1>Sekai List</h1>
+                <img src={Logo}></img>
+                <h1>SekaiList</h1>
             </div>
-            <div className='nav-container'>
+            <div className='container'>
                 <SearchBar />
-                <div>
-                    <ul className='unorderedList Anime'>
-                        <li><a href="#" className='linkUnordered'>Animes</a></li>
+                <div className='menu'>
+                    <ul>
+                        <li><a href="#">Animes</a></li>
                     </ul>
-                    <ul className='unorderedList Manga'>
-                        <li><a href="#" className='linkUnordered'>Mangás</a></li>
+                    <ul>
+                        <li><a href="#">Mangás</a></li>
                     </ul>
-                </div>
-                <div className='DivUser'>
-                    <img src={Logo} className='img'></img>
                 </div>
             </div>
         </nav>

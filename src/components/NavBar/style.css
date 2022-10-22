@@ -1,42 +1,40 @@
 @charset "UTF-8";
 nav{
-    padding: 1rem 10rem;
+    width: 100%;
+    padding: 0 10rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-.logo{
-    display: flex;
-    color: black;
-    width: 300px;
-    align-items: center;
-}
-.img{
-    width: 60px;
-    height: 59px;
-    margin-right: 1rem;
 }
 h1{
     font-size: 2rem;
 }
-
-.nav-container{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+img{
+    width: 60px;
+    height: 59px;
+    margin-right: 1rem;
 }
-.unorderedList{
-    margin: 1.7rem 0;
-    display: inline-block;
+ul{
     list-style-type: none;
 }
-.Anime{
-    padding-left: 900px;
-    padding-right: 50px;
-}
-.linkUnordered{
-    color: black;
+ul > li > a{
     text-decoration: none;
+    color: "black";
+    marginRight: 0.5rem;
+}
+.logo{
+    display: flex;
+    color: black;
+    width: 100%;
+    align-items: center;
+}
+.container{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
 }
 .DivUser{
     margin-top: 0.5rem;

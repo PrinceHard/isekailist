@@ -2,7 +2,7 @@ import './style.css'
 
 function SearchBar() {
     return (
-        <div className='navbar'>
+        <div>
             <input placeholder='Pesquise um anime' className='searchBar'></input>
         </div>
     )

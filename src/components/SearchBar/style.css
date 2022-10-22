@@ -1,15 +1,10 @@
 .searchBar{
-    margin-top: 20px;
-    width: 30%;
     height: 15px;
     padding: 1rem;
     border: 2px solid black;
     background: transparent;
     z-index: 1000;
-    position: absolute;
     border-radius: 0.5rem;
     outline: none;
     color: black;
-    margin-left: 220px;
-
 }
