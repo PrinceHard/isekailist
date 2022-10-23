@@ -2,8 +2,9 @@
 .Banner{
     background-image: url(../../assets/image/BannerNoragami.jpg); /*  imagem tem q ter largura 1920 x altura835*/
     background-repeat: no-repeat;
-    width: 1920px;
-    height: 835px;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 600px;
     background-position: center top;
     background-attachment: fixed;
 }
