@@ -26,6 +26,14 @@ img{
 }
 ul{
     list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+ul > li{
+    display: inline-block;
+}   
+ul > li:last-child{
+    margin-left: 2rem;
 }
 ul > li > a{
     text-decoration: none;
@@ -43,9 +51,6 @@ ul > li > a:hover{
     
 }
 .menu{
-    align-items: center;
     display: flex;
-}
-.DivUser{
-    margin-top: 0.5rem;
-}
+    align-items: center;
+}   
