@@ -6,6 +6,7 @@ function Header() {
     return (
         <div>
             <NavBar/>
+            <div className='background'/>
         </div>
     )
 }

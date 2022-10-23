@@ -8,7 +8,7 @@ function NavBar() {
         <nav>
             <div className='logo'>
                 <img src={Logo}></img>
-                <h1>SekaiList</h1>
+                <h1>Sekai List</h1>
             </div>
             <div>
                 <SearchBar />

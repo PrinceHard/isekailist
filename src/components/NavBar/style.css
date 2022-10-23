@@ -1,14 +1,6 @@
 @charset "UTF-8";
-.Banner{
-    background-image: url(../../assets/image/BannerNoragami.jpg) ; /*  imagem tem q ter largura 1920 x altura835*/
-    filter: brightness(80%);
-    background-repeat: no-repeat;
-    max-width: 1440px;
-    margin: 0 auto;
-    height: 600px;
-    background-position: center top;
-    background-attachment: fixed;
-}
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 nav{
     width: 100%;
     padding: 1rem 10rem;
@@ -17,12 +9,14 @@ nav{
     justify-content: space-between;
 }
 h1{
-    font-size: 2rem;
+    font-size: 26px;
+    font-family: 'Permanent Marker', cursive;
+    color: #white;
 }
 img{
-    width: 60px;
-    height: 59px;
-    margin-right: 1rem;
+    width: 50px;
+    height: 48px;
+    margin-right: 24px;
 }
 ul{
     list-style-type: none;
@@ -37,8 +31,10 @@ ul > li:last-child{
 }
 ul > li > a{
     text-decoration: none;
-    color: rgb(0, 255, 115);
+    color: #fff;
     margin-right: 1rem;
+    font-size: 16px;
+    font-weight: bold;
 }
 ul > li > a:hover{
     background-color: rgba(128, 128, 128, 0.705);
@@ -48,7 +44,6 @@ ul > li > a:hover{
     display: flex;
     color: white;
     align-items: center;
-    
 }
 .menu{
     display: flex;
