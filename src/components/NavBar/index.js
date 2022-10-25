@@ -1,6 +1,6 @@
 import SearchBar from '../SearchBar'
 import Logo from '../../assets/images/logo.png'
-import {ReactComponent as Profile} from '../../assets/svg/user.svg';
+import { ReactComponent as Profile } from '../../assets/svg/user.svg';
 import "./style.css"
 
 function NavBar() {
@@ -8,7 +8,9 @@ function NavBar() {
         <nav>
             <div className='logo'>
                 <img src={Logo}></img>
-                <h1>Sekai List</h1>
+                <a href='#'>
+                    <h1>Sekai List</h1>
+                </a>
             </div>
             <div>
                 <SearchBar />
@@ -17,7 +19,7 @@ function NavBar() {
                 <ul>
                     <li><a href="#">Animes</a></li>
                     <li><a href="#">Mangás</a></li>
-                    <li><a href="#"><Profile/></a></li>
+                    <li><a href="#"><Profile /></a></li>
                 </ul>
             </div>
         </nav>
