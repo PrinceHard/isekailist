@@ -1,0 +1,24 @@
+.container{
+    position: relative;
+}
+
+.searchBar{
+    height: 36px;
+    max-width: 525px;
+    width: 30vw;
+    padding: 10px;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 6px;
+    outline: none;
+    color: #fff;
+}
+
+.icon-search{
+    position: absolute;
+    top:0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    z-index: 10;
+}
