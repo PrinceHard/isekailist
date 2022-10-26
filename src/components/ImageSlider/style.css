@@ -1,0 +1,23 @@
+.container{
+    height: 100%;
+    margin: 0 auto;
+}
+
+.pagination{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    transform: translateX(-100%) !important;
+}
+
+.dots{
+    font-size: 23px;
+    cursor: pointer;
+    color: #fff;
+    height: 30px;
+}

@@ -1,5 +1,6 @@
 .container{
     position: relative;
+    z-index: 10;
 }
 
 .searchBar{
@@ -12,6 +13,7 @@
     border-radius: 6px;
     outline: none;
     color: #fff;
+    z-index: 10;
 }
 
 .icon-search{
@@ -22,3 +24,16 @@
     margin-right: 10px;
     z-index: 10;
 }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+  }
