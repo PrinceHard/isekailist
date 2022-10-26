@@ -3,7 +3,7 @@ import Logo from '../../assets/images/logo.png'
 import { ReactComponent as Profile } from '../../assets/svg/user.svg';
 import "./style.css"
 
-function NavBar() {
+const NavBar = () => {
     return (
         <nav>
             <div className='logo'>
