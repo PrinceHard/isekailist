@@ -1,7 +1,7 @@
-import {useState } from "react";
+import './style.css'
+import { useState } from "react";
 import {ReactComponent as Imdb } from "../../assets/svg/imdb.svg";
 import RottenTomatoes from "../../assets/images/rottenTomatoes.png";
-import './style.css'
 
 const ImageSlider = ({ slides }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
