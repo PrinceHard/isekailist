@@ -15,6 +15,11 @@ const NavBar = () => {
             <div>
                 <SearchBar />
             </div>
+            <div className="mobile-menu">
+                <div className="line1"></div>
+                <div className="line2"></div>
+                <div className="line3"></div>
+            </div>
             <div className='menu'>
                 <ul className="list">
                     <li><a href="#">Animes</a></li>
