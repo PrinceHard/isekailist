@@ -1,51 +1,100 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 
-nav{
+.nav-container{
     width: 100%;
-    padding: 1rem 10rem;
+    padding: 1rem 14vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-h1{
-    font-size: 26px;
-    font-family: 'Permanent Marker', cursive;
-    color: #white;
-}
-img{
-    width: 50px;
-    height: 48px;
-    margin-right: 24px;
-}
-ul{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-}
-ul > li{
-    display: inline-block;
-}   
-ul > li:last-child{
-    margin-left: 2rem;
-}
-a{
-    text-decoration: none;
-    color: #fff;
-    margin-right: 1rem;
-    font-size: 16px;
-    font-weight: bold;
-}
-ul > li > a:hover{
-    background-color: rgba(128, 128, 128, 0.705);
-    border-radius: 5px;
 }
 .logo{
     display: flex;
     color: white;
     align-items: center;
+    z-index: 2;
+}
+.logo-title{
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.mobile-menu{
+    cursor: pointer; 
+    display: none;
+    margin: 0 16px;
+    z-index: 2;  
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px 0;
 }
 .menu{
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }   
+.list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+ul > li:last-child{
+    margin-left: 2rem;
+}
+ul > li:last-child:hover{
+    background-image: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1rem;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "DM-sans", "sans-serif";
+}
+ul > li:hover{
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5  51%, #00d2ff  100%);
+    border-radius: 2px;
+    padding: 0.8rem 0;
+}
+
+
+@media (max-width: 999px){
+    body{
+        overflow-x: hidden;
+        overflow: hidden;
+    }
+    .list{
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 50vw;
+        height: calc(100vh - 80px);
+        background-image: linear-gradient(0deg, #0d0c0d 0%, #2c0051 100%);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    ul > li:last-child{
+        margin-left: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+
+}
+
+.active {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in;
+}
+
