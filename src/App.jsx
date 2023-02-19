@@ -1,12 +1,13 @@
 import './App.css';
 import Header from './components/Header';
-
+import SliderCatalog from './components/SliderCatalog/SliderCatalog';
+import MaisPopulares from './components/MaisPopulares/MaisPopulares'
 
 const App = () => {
   return (
-    <div>
+    <div className='background'>
       <Header/>
-      <div className='background'/>
+      <SliderCatalog/>
     </div>
   );
 }
