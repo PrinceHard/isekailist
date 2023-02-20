@@ -1,18 +1,18 @@
 
 import {useState,useEffect,useRef} from 'react'
 import { motion } from 'framer-motion'
-import banner1 from '../../assets/MaisPopulares/banner1.jpg'
-import banner2 from '../../assets/MaisPopulares/banner2.jpg'
-import banner3 from '../../assets/MaisPopulares/banner3.jpe'
-import banner4 from '../../assets/MaisPopulares/banner4.jpeg'
-import banner5 from '../../assets/MaisPopulares/banner5.jpg'
-import banner6 from'../../assets/MaisPopulares/banner6.jpeg'
-import banner7 from '../../assets/MaisPopulares/banner7.jpg'
-import banner8 from '../../assets/MaisPopulares/banner8.jpe'
-import banner9 from '../../assets/MaisPopulares/banner9.webp'
-import banner10 from '../../assets/MaisPopulares/banner10.jpg'
+import banner1 from '../../assets/MaisBemAvaliados/banner1.jpg'
+import banner2 from '../../assets/MaisBemAvaliados/banner2.jpe'
+import banner3 from '../../assets/MaisBemAvaliados/banner3.jpe'
+import banner4 from '../../assets/MaisBemAvaliados/banner4.jpe'
+import banner5 from '../../assets/MaisBemAvaliados/banner5.jpg'
+import banner6 from'../../assets/MaisBemAvaliados/banner6.png'
+import banner7 from '../../assets/MaisBemAvaliados/banner7.jpe'
+import banner8 from '../../assets/MaisBemAvaliados/banner8.jpg'
+import banner9 from '../../assets/MaisBemAvaliados/banner9.jpg'
+import banner10 from '../../assets/MaisBemAvaliados/banner10.jpg'
 const images = [banner1,banner2,banner3,banner4,banner5,banner6,banner7,banner8,banner9,banner10]
-function MaisPopulares(){
+function MaisBemAvaliados(){
     const carousel = useRef();
     const [width,setWidth] = useState(0)
     useEffect(() =>{
@@ -22,7 +22,7 @@ function MaisPopulares(){
     return(
         <div className='App'>
             <motion.div ref={carousel} className='carousel' whileTap={{cursor:"grabbing"}}>
-                <motion.h1 className='titulo'>Mais Populares</motion.h1>
+                <motion.h1 className='titulo'>Mais Bem Avaliados</motion.h1>
                 <motion.div className='inner' drag='x' dragConstraints={{right: 0,left: -width}}
                 initial={{x: 100}}
                 animate={{x: 0}}
@@ -39,4 +39,4 @@ function MaisPopulares(){
         </div>
     )
 }
-export default MaisPopulares
+export default MaisBemAvaliados
