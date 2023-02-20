@@ -14,6 +14,7 @@ const App = () => {
         <MaisPopulares/>
         <AnimesSubestimados/>
         <MaisBemAvaliados/>
+        <Footer/>
       </div>
   );
 }
