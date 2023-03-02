@@ -1,21 +1,16 @@
 import './App.css';
-import Header from './components/Header';
-import SliderCatalog from './components/SliderCatalog/SliderCatalog';
-import MaisPopulares from './components/MaisPopulares/MaisPopulares'
-import AnimesSubestimados from './components/AnimesSubestimados/AnimesSubestimados';
-import MaisBemAvaliados from './components/MaisBemAvaliados/MaisBemAvaliados'
+import AnimeSection from './components/AnimeSection';
 import Footer from './components/Footer/Footer';
+import Header from './components/Header';
 const App = () => {
   return (
     <div>
-      <Header/>
-      <div className='background'></div>
-        <SliderCatalog/>
-        <MaisPopulares/>
-        <AnimesSubestimados/>
-        <MaisBemAvaliados/>
-        <Footer/>
+      <div className='background'>
+        <Header />
+        <AnimeSection />
+        <Footer />
       </div>
+    </div>
   );
 }
 

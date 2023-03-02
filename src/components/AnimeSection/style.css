@@ -1,0 +1,19 @@
+.list-section{
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    left: 13vw;
+    gap: 1rem;
+}
+
+.item-section{
+    width: 180px;
+    height: 250px;
+    background-color: rgb(48, 211, 223);
+    border-radius: 2rem;
+    cursor: grab;
+    z-index: 1;
+    transition: transform 300ms ease 100ms;
+}
+
+
