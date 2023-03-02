@@ -1,10 +1,20 @@
-import './style.css'
-import { useState } from "react";
-import {ReactComponent as Imdb } from "../../assets/svg/imdb.svg";
+import { delay } from "framer-motion";
+import { useEffect, useState } from "react";
 import RottenTomatoes from "../../assets/images/rottenTomatoes.png";
+import { ReactComponent as Imdb } from "../../assets/svg/imdb.svg";
+import './style.css';
 
 const ImageSlider = ({ slides }) => {
+
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        setTimeout(() => 
+            setCurrentIndex((prevIndex) =>
+            prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+        ),
+        8000)
+    }, [currentIndex]);
 
     const goToSlide = (index) => {
         setCurrentIndex(index)
@@ -23,8 +33,8 @@ const ImageSlider = ({ slides }) => {
             <div className="anime-info-container">
                 <h1 className="title">{slides[currentIndex].title}</h1>
                 <div className="critics-container">
-                    <Imdb className="imdb"/><span>{slides[currentIndex].imdb}</span>
-                    <img className="rotten" src={RottenTomatoes}/><span>{slides[currentIndex].rottenTomatoes}</span>
+                    <Imdb className="imdb" /><span>{slides[currentIndex].imdb}</span>
+                    <img className="rotten" src={RottenTomatoes} /><span>{slides[currentIndex].rottenTomatoes}</span>
                 </div>
                 <div className="synopsis-container">
                     <p>{slides[currentIndex].synopsis}</p>
@@ -36,7 +46,7 @@ const ImageSlider = ({ slides }) => {
             <div className="pagination">
                 <div>
                     {slides.map((slide, index) => (
-                        <div key={index} className='dots' onClick={() => goToSlide(index)} >●</div>
+                        <div key={index} className='dots' onClick={() => goToSlide(index)}>●</div>
                     ))}
                 </div>
             </div>
