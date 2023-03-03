@@ -1,6 +1,5 @@
 import "./style.css"
 import SearchBar from '../SearchBar'
-import Logo from '../../assets/images/logo.png'
 import { ReactComponent as Profile } from '../../assets/svg/user.svg';
 import { useRef, useState } from "react";
 
@@ -9,7 +8,7 @@ const NavBar = () => {
     const listRef = useRef();
     const menuRef = useRef();
 
-    const showMenuList = () =>{
+    const showMenuList = () => {
         console.log("true")
         listRef.current.classList.toggle("active")
         menuRef.current.classList.toggle("active-menu")
@@ -31,8 +30,10 @@ const NavBar = () => {
                     <li><a href="#">Animes</a></li>
                     <li><a href="#">Mangás</a></li>
                     <li><a href="#">Notícias</a></li>
-                    <li><a href="#"><Profile /></a></li>
                 </ul>
+                <div className="profile-icon">
+                    <Profile />
+                </div>
             </div>
             <div className="mobile-menu" onClick={showMenuList}>
                 <div className="line1"></div>
