@@ -1,0 +1,27 @@
+.list-section{
+    padding-top: 1rem;
+    display: flex;
+    position: relative;
+    left: 13vw;
+    max-width: calc(100% - 13vw);
+    gap: 1rem;
+}
+
+.item-section{
+    width: 220px;
+    height: 320px;
+    background-color: rgb(48, 211, 223);
+    border-radius: 2rem;
+    cursor: grab;
+    z-index: 1;
+    transition: transform 300ms ease 100ms;
+}
+
+.name-section{
+    color: white;
+    position: relative;
+    margin-top: 4rem;
+    left: 13vw;
+}
+
+

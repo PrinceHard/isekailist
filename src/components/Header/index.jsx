@@ -6,7 +6,7 @@ import {slides} from '../../data/banner/slides'
 const Header = () => {
 
     return (
-        <div>
+        <div className='header-container'>
             <NavBar />
             <div className='container-slide'>
                 <ImageSlider slides={slides} />
