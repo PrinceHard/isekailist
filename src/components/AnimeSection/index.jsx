@@ -1,22 +1,31 @@
 import './style.css';
-import { motion } from 'framer-motion'
+import { list } from '../../data/section'
+import {MdChevronLeft, MdChevronRight} from 'react-icons/md'
 
 const AnimeSection = (props) => {
+
+    const slideLeft = () =>{
+        var slider = document.getElementById('slider')
+        slider.scrollLeft = slider.scrollLeft - 500
+    }
+
+    const slideRight = () =>{
+        var slider = document.getElementById('slider')
+        slider.scrollLeft = slider.scrollLeft + 500
+    }
+
     return (
-        <section style={{display: 'block'}}>
-        <h2 className='name-section'>{props.nameSection}</h2>
-            <motion.div className='list-section' drag='x' dragConstraints={{right: 0,left: -100}}
-                initial={{x: 100}}
-                animate={{x: 0}}
-                transition={{duration:0.8}}
-                >
-                <div className="item-section"></div>
-                <div className="item-section"></div>
-                <div className="item-section"></div>
-                <div className="item-section"></div>
-                <div className="item-section"></div>
-                <div className="item-section"></div>
-            </motion.div>
+        <section>
+            <h2 className='name-section'>{props.nameSection}</h2>
+            <div className='list-section'>
+            <MdChevronLeft size={40} onClick={slideLeft} className='arrow'/>
+                <div id='slider' className='slider-list'>
+                    {list.map((card) => (
+                        <img className='item-section' src={card.url} alt='/' />
+                    ))}
+                </div>
+            <MdChevronRight size={40} onClick={slideRight} className='arrow'/>
+            </div>
         </section>
     )
 }

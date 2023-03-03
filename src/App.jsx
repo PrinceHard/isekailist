@@ -4,8 +4,8 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header';
 const App = () => {
   return (
-    <div>
-      <div className='background'>
+    <div style={{width: '100%'}}>
+      <div className='background' style={{width: '100%'}}>
         <Header />
         <AnimeSection nameSection={"Animes Season"}/>
         <AnimeSection nameSection={"Most Popular Animes"}/>
