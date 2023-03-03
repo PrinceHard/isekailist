@@ -2,8 +2,8 @@
     padding-top: 1rem;
     display: flex;
     position: relative;
-    overflow-x: hidden;
     left: 13vw;
+    max-width: calc(100% - 13vw);
     gap: 1rem;
 }
 
