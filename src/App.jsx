@@ -7,7 +7,7 @@ const App = () => {
     <div>
       <div className='background'>
         <Header />
-        <AnimeSection />
+        <AnimeSection nameSection={"Animes Season"}/>
         <Footer />
       </div>
     </div>
