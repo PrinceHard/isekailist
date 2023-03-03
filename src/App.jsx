@@ -9,8 +9,8 @@ const App = () => {
         <Header />
         <AnimeSection nameSection={"Animes Season"}/>
         <AnimeSection nameSection={"Most Popular Animes"}/>
-        <AnimeSection nameSection={"News"}/>
         <AnimeSection nameSection={"Most Read Mangas"}/>
+        <AnimeSection nameSection={"News"}/>
         <Footer />
       </div>
     </div>

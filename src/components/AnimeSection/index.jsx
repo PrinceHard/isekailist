@@ -16,8 +16,6 @@ const AnimeSection = (props) => {
                 <div className="item-section"></div>
                 <div className="item-section"></div>
                 <div className="item-section"></div>
-                <div className="item-section"></div>
-                <div className="item-section"></div>
             </motion.div>
         </section>
     )
