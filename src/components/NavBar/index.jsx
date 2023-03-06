@@ -1,7 +1,7 @@
 import "./style.css"
 import SearchBar from '../SearchBar'
 import { ReactComponent as Profile } from '../../assets/svg/user.svg';
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 const NavBar = () => {
 

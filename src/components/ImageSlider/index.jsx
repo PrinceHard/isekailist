@@ -1,4 +1,3 @@
-import { delay } from "framer-motion";
 import { useEffect, useState } from "react";
 import RottenTomatoes from "../../assets/images/rottenTomatoes.png";
 import { ReactComponent as Imdb } from "../../assets/svg/imdb.svg";
