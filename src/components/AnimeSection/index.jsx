@@ -5,12 +5,12 @@ import {MdChevronLeft, MdChevronRight} from 'react-icons/md'
 const AnimeSection = (props) => {
 
     const slideLeft = () =>{
-        var slider = document.getElementById('slider')
+        var slider = document.getElementById(props.id)
         slider.scrollLeft = slider.scrollLeft - 500
     }
 
     const slideRight = () =>{
-        var slider = document.getElementById('slider')
+        var slider = document.getElementById(props.id)
         slider.scrollLeft = slider.scrollLeft + 500
     }
 
@@ -19,7 +19,7 @@ const AnimeSection = (props) => {
             <h2 className='name-section'>{props.nameSection}</h2>
             <div className='list-section'>
             <MdChevronLeft size={40} onClick={slideLeft} className='arrow'/>
-                <div id='slider' className='slider-list'>
+                <div id={props.id} className='slider-list'>
                     {list.map((card) => (
                         <img className='item-section' src={card.url} alt='/' />
                     ))}
