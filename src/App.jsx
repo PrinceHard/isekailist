@@ -7,10 +7,10 @@ const App = () => {
     <div>
       <div className='background'>
         <Header />
-        <AnimeSection nameSection={"Animes Season"} id={1} />
-        <AnimeSection nameSection={"Most Popular Animes"} id={2}/>
-        <AnimeSection nameSection={"Most Read Mangas"}/>
-        <AnimeSection nameSection={"News"}/>
+        <AnimeSection id={"section-1"} nameSection={"Animes Season"}/>
+        <AnimeSection  id={"section-2"} nameSection={"Most Popular Animes"}/>
+        <AnimeSection id={"section-3"} nameSection={"Most Read Mangas"}/>
+        <AnimeSection id={"section-4"} nameSection={"News"}/>
         <Footer />
       </div>
     </div>
