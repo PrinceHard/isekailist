@@ -1,0 +1,20 @@
+.animes-container{
+    margin: 5rem auto;
+    color: white;
+    text-align: center;
+}
+.genero-container{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    gap: 20px;
+    margin: 3rem auto;
+}
+.genero-container div{
+    color: white;
+    background-color: #333;
+    width: 290px;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

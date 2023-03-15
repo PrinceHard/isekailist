@@ -30,3 +30,4 @@ const AnimeSection = (props) => {
     )
 }
 export default AnimeSection
+
