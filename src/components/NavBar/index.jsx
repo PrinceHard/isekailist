@@ -2,6 +2,7 @@ import "./style.css"
 import SearchBar from '../SearchBar'
 import { ReactComponent as Profile } from '../../assets/svg/user.svg';
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
 
@@ -18,18 +19,18 @@ const NavBar = () => {
     return (
         <nav className="nav-container">
             <div className='logo'>
-                <a href='/'>
+                <Link to='/'>
                     <h1 className="logo-title">SL</h1>
-                </a>
+                </Link>
             </div>
             <div>
                 <SearchBar />
             </div>
             <div className='menu'>
                 <ul className="list" ref={listRef}>
-                    <li><a href="#">Animes</a></li>
-                    <li><a href="#">Mangás</a></li>
-                    <li><a href="#">Notícias</a></li>
+                    <li><Link to="/animes">Animes</Link></li>
+                    <li><Link to="/mangas">Mangás</Link></li>
+                    <li><Link to="/noticias">Notícias</Link></li>
                 </ul>
                 <div className="profile-icon">
                     <Profile />
