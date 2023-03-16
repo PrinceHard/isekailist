@@ -5,15 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Animes from './pages/Animes';
+import Mangas from './pages/Mangas';
 import GenerosAnime from './components/GenerosAnime';
 import AnimesList from './components/AnimesList';
+import GenerosMangas from './components/GenerosMangas';
+import MangasList from './components/MangasList';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
   },
   {
-    path: "/animes",
+    path: "animes",
     element: <Animes/>,
     children: [
       {
@@ -27,9 +30,19 @@ const router = createBrowserRouter([
     ]
   },
   {
-    
-  },
-
+    path: "mangas",
+    element: <Mangas/>,
+    children: [
+      {
+        path: "",
+        element: <GenerosMangas/>
+      },
+      {
+        path: "generos/:generoId",
+        element: <MangasList/>
+      }
+    ]
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

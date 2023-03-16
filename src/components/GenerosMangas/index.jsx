@@ -1,16 +1,16 @@
-import { lista } from "../../data/generosAnimes"
+import { lista } from "../../data/generosMangas"
 import { Link } from "react-router-dom"
 
-const GenerosAnime = () => {
+const GenerosMangas = () => {
     return (
         <div>
-            <h1 className="title-level1-genre">Gêneros Anime</h1>
+            <h1 className="title-level1-genre">Gêneros Mangás</h1>
             <div className="genero-container">
                 {lista.map((genero) => (
-                    <Link to={`/animes/generos/${genero.id}`}>  
+                    <Link to={`/mangas/generos/${genero.id}`}>  
                             <div style={{width:'290px',height: '290px'}}>
                                 <h3 className="title-generos">{genero.name}</h3>
-                                <div key={genero.id} style={{ backgroundImage: `url(${genero.img})`, filter: 'brightness(70%)' }} className="card-genero"></div>
+                                <div key={genero.id} style={{ backgroundImage: `url(${genero.img})`, filter: 'brightness(55%)' }} className="card-genero"></div>
                             </div>
                     </Link>
                 ))}
@@ -18,4 +18,4 @@ const GenerosAnime = () => {
         </div>
     )
 }
-export default GenerosAnime
+export default GenerosMangas
