@@ -10,6 +10,7 @@
     margin: 3rem auto;
 }
 .genero-container div{
+    border-radius: 10px;
     color: white;
     background-color: #333;
     width: 290px;
