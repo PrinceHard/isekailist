@@ -1,0 +1,102 @@
+.iconePag{
+    width: 70vw;
+    margin: 0px auto;
+    margin-top: 40px;
+    color: white;
+    height: 80vh;
+}
+.tituloCapa{
+    font-size: 3rem;
+}
+.subTituloCapa{
+    margin: 20px 10px;
+    font-size: 18px;
+}
+.imgCapa{
+    width: 318px;
+    height: 450px;
+    margin-right: 20px;
+}
+.boxVideo{
+    display: flex;
+    justify-content: space-between;
+}
+.generoObjeto{
+    display: flex;
+    margin-top: 10px;
+}
+.generoObjeto h5{
+    margin-right: 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: solid rgb(150, 150, 150);
+    padding: 10px;
+}
+.fundoBranco{
+    min-width: 100vw;
+    max-height: 180vh;
+    background-color: white;
+}
+.fundoBranco h2{
+    max-width: 70vw;
+    margin: 40px auto;
+    color: black;
+    font-size: 2rem;
+}
+.boxComplementar{
+    max-width: 70vw;
+    margin: 40px auto;
+    color: black;
+    display: grid;
+    grid-template-columns: auto auto ;
+}
+.containerComplementaMap{
+    margin-top: 20px;
+    min-width: 700px;
+    grid-row: 1/6;
+}
+.containerComplementaMap p{
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.boxFichaTecnica h3{
+    margin-top: 10px;
+}
+.boxFichaTecnica h4{
+    font-weight: 500;
+    margin-top: 5px;
+}
+.boxSemelhantes{
+    margin-top: 60px;
+}
+.tituloNoticias{
+    min-width: 300px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.boxNoticia{
+  max-width: 300px;
+  margin-left: 50px;
+}
+.imgSemelhantes{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 50px;
+    gap: 10px;
+    max-width: 550px;
+}
+.caixaSemelhante{
+   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.473);
+   border-radius: 10px ;
+}
+.caixaSemelhante h3{
+    margin-left: 20px;
+}
+.caixaSemelhante h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}

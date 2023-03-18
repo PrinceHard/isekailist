@@ -10,6 +10,7 @@ import GenerosAnime from './components/GenerosAnime';
 import AnimesList from './components/AnimesList';
 import GenerosMangas from './components/GenerosMangas';
 import MangasList from './components/MangasList';
+import PageDetail from './components/PageDetail';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         element: <AnimesList/>,
       },
     ]
+  },
+  {
+      path:"anime/:animeId",
+      element: <PageDetail/> 
   },
   {
     path: "mangas",
