@@ -11,10 +11,17 @@ import AnimesList from './components/AnimesList';
 import GenerosMangas from './components/GenerosMangas';
 import MangasList from './components/MangasList';
 import PageDetail from './pages/PageDetail';
+import ErrorNotFund from './pages/ErrorNotFund';
+import Erro from './pages/Erro';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    errorElement: <Erro/>
+  },
+  {
+    path: "*",
+    element: <ErrorNotFund/>
   },
   {
     path: "animes",
