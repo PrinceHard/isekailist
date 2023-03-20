@@ -1,8 +1,8 @@
 import NavBar from "../../components/NavBar"
 import Footer from "../../components/Footer/Footer"
-import "./style.css"
+import './style.css'
 import { noticias } from "../../data/news"
-import Scans from "../../components/Scans"
+import  Scans  from "../../components/Scans"
 const Noticias = () => {
     return (
         <div className="background">
