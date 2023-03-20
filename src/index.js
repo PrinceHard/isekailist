@@ -13,7 +13,6 @@ import MangasList from './components/MangasList';
 import PageDetail from './pages/PageDetail';
 import ErrorNotFund from './pages/ErrorNotFund';
 import Erro from './pages/Erro';
-import Noticias from './pages/Noticias';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -55,10 +54,6 @@ const router = createBrowserRouter([
         element: <MangasList/>
       }
     ]
-  },
-  {
-    path: "noticias",
-    element: <Noticias/>
   }
 ]);
 

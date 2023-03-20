@@ -1,101 +1,123 @@
-.iconePag{
-    width: 70vw;
-    margin: 0px auto;
-    margin-top: 40px;
+.iconePag {
+    margin-top: 4rem;
     color: white;
-    height: 80vh;
 }
-.tituloCapa{
+
+.pageDetailHeaderContainer {
+    margin: 0 12vw 4rem 12vw;
+    max-width: 100%;
+}
+
+.infoAndNewsContainer{
+    display: flex;
+    padding: 2rem 12vw;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.tituloCapa {
     font-size: 3rem;
 }
-.subTituloCapa{
+
+.subTituloCapa {
     margin: 20px 10px;
     font-size: 18px;
 }
-.imgCapa{
+
+.imgCapa {
     width: 318px;
     height: 450px;
     margin-right: 20px;
 }
-.boxVideo{
+
+.boxVideo {
     display: flex;
     justify-content: space-between;
 }
-.generoObjeto{
+
+.generoObjeto {
     display: flex;
     margin-top: 10px;
 }
-.generoObjeto h5{
+
+.generoObjeto h5 {
     margin-right: 10px;
     font-size: 15px;
     border-radius: 20px;
     border: solid rgb(150, 150, 150);
     padding: 10px;
 }
-.fundoBranco{
-    min-width: 100vw;
-    max-height: 180vh;
+
+.detailInfoContainer {
+    width: 100%;
     background-color: white;
 }
-.fundoBranco h2{
-    max-width: 70vw;
-    margin: 40px auto;
+
+.boxComplementar {
+    max-width: 50vw;
     color: black;
-    font-size: 2rem;
 }
-.boxComplementar{
-    max-width: 70vw;
-    margin: 40px auto;
-    color: black;
-    display: grid;
-    grid-template-columns: auto auto ;
-}
-.containerComplementaMap{
+
+.containerComplementaMap {
     margin-top: 20px;
     min-width: 700px;
     grid-row: 1/6;
 }
-.containerComplementaMap p{
+
+.containerComplementaMap p {
     color: black;
     font-size: 18px;
     font-weight: bolder;
 }
-.boxFichaTecnica h3{
-    margin-top: 10px;
+
+.boxFichaTecnica {
+    margin-top: 2rem;
 }
-.boxFichaTecnica h4{
+
+.boxFichaTecnica h2{
+    margin-bottom: 1rem;
+}
+
+.boxFichaTecnica h4 {
     font-weight: 500;
-    margin-top: 5px;
 }
-.boxSemelhantes{
+
+.boxSemelhantes {
     margin-top: 60px;
 }
-.tituloNoticias{
-    min-width: 300px;
+
+.tituloNoticias {
     text-align: center;
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 900;
 }
-.boxNoticia{
-  max-width: 300px;
-  margin-left: 50px;
+
+.noticiasContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.imgSemelhantes{
+
+.imgSemelhantes {
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin-top: 50px;
     gap: 10px;
     max-width: 550px;
 }
-.caixaSemelhante{
-   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.473);
-   border-radius: 10px ;
+
+.caixaSemelhante {
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.473);
+    border-radius: 10px;
 }
-.caixaSemelhante h3{
+
+.caixaSemelhante h3 {
     margin-left: 20px;
 }
-.caixaSemelhante h4{
+
+.caixaSemelhante h4 {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 20px;
