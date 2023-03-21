@@ -6,8 +6,8 @@ const MangasList = () => {
         <div>
             <h1>Mangás de Ação</h1>
             <div className="genero">
-                {lista.map((anime) => (
-                    <Link to={`/manga/${anime.id}`}><img src={anime.img} /></Link>
+                {lista.map((manga) => (
+                    <Link to={`/manga/${manga.id}`}><img src={manga.img} /></Link>
                 ))}
             </div>
         </div>

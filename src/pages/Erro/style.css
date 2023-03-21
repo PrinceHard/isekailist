@@ -1,0 +1,18 @@
+.fundoErro {
+    width: 100vw;
+    background-color: white;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ErroBox {
+    text-align: center;
+    width: 50vw;
+}
+
+.erroChar {
+    margin-top: 30px;
+    width: 600px;
+}

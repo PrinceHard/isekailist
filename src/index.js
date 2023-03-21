@@ -10,10 +10,20 @@ import GenerosAnime from './components/GenerosAnime';
 import AnimesList from './components/AnimesList';
 import GenerosMangas from './components/GenerosMangas';
 import MangasList from './components/MangasList';
+import PageDetail from './pages/PageDetail';
+import ErrorNotFund from './pages/ErrorNotFund';
+import Erro from './pages/Erro';
+import Noticias from './pages/Noticias'
+import PageDetailManga from './pages/PageDetailManga/index';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    errorElement: <Erro/>
+  },
+  {
+    path: "*",
+    element: <ErrorNotFund/>
   },
   {
     path: "animes",
@@ -30,6 +40,10 @@ const router = createBrowserRouter([
     ]
   },
   {
+      path:"anime/:animeId",
+      element: <PageDetail/> 
+  },
+  {
     path: "mangas",
     element: <Mangas/>,
     children: [
@@ -42,6 +56,14 @@ const router = createBrowserRouter([
         element: <MangasList/>
       }
     ]
+  },
+  {
+    path:"manga/:mangaId",
+    element: <PageDetailManga/>
+  },
+  {
+    path: "noticias",
+    element: <Noticias/>
   }
 ]);
 
