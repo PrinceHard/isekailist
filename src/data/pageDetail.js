@@ -33,3 +33,36 @@ export const details =
         seinen: "Seinen"
     }
 }
+export const detailsMangas = 
+{
+    id: 1,
+    titulo: "Owari no Seraph",
+    img: "http://localhost:3000/capaManga.jpg",
+    sinopse: "Tendo perdido seus pais, Yuuichirou Amane, de oito anos, é acolhido pelo orfanato Hyakuya, onde luta para se relacionar com sua nova 'família'. No entanto, isso logo se torna a menor das suas preocupações, quando uma grande pandemia ocorre repentinamente, matando acima dos 13 anos. Aproveitando o caos, os vampiros — que anteriormente estavam adormecidos no subsolo — se levantam e escravizam os humanos sobreviventes, usando-os como gado para colher sangue. Quatro anos depois, Yuuichirou e sua família se adaptaram à vida sob controle de vampiros, embora Yuuichirou ainda aspire a matar todos os vampiros e acabar com seu reino de terror. Isso muitas vezes o coloca em desacordo com a colega órfã Mikaela Hyakuya, que enfatiza o uso de inteligência e engenhosidade para sobreviver. Tendo conquistado o favor entre vampiros de alto escalão, Mikaela ganha conhecimento interno e usa isso para planejar uma fuga ousada. Mas durante a tentativa, o grupo de órfãos é interceptado pelo oficial de vampiros Ferid Bathory, que começa a massacrá-los. Yuuichirou é o único membro do grupo a escapar para a superfície, onde é descoberto pela Moon Demon Company, uma unidade militar dedicada à caça de vampiros. Dado um convite para participar, Y",
+    score: "8.49",
+    lancamento: "03 de Setembro de 2012",
+    Ano: "2012",
+    autores: " Yamamoto, Yamato ( Art ), Kagami, Takaya ( História ), Furuya, Daisuke ( História )",
+    studio: "Jump SQ",
+    fonte: "Manga",
+    demografia: "Shounen",
+    volumes: "26",
+    genero: {
+        acao: "Ação",
+        aventura: "Aventura",
+        avantGarde: "Avant-garde",
+        misterio: "Mistério",
+        sobrenatural: "Sobrenatural",
+        comedia: "Comédia",
+        drama: "Drama",
+        fanService: "Fan-Service",
+        fantasia: "Fantasia",
+        terror: "Terror",
+        psicologico: "Psicológico",
+        romance: "Romance",
+        sciFi: "Sci-Fi",
+        sliceOfLife: "Slice Of Life",
+        sport: "Sport",
+        seinen: "Seinen"
+    }
+}
