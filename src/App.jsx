@@ -7,10 +7,12 @@ const App = () => {
     <div>
       <div className='background'>
         <Header />
-        <AnimeSection id={"section-1"} nameSection={"Animes Season"}/>
-        <AnimeSection  id={"section-2"} nameSection={"Most Popular Animes"}/>
-        <AnimeSection id={"section-3"} nameSection={"Most Read Mangas"}/>
-        <AnimeSection id={"section-4"} nameSection={"News"}/>
+        <div className='slyderBox'>
+          <AnimeSection id={"section-1"} nameSection={"Animes Season"}/>
+          <AnimeSection  id={"section-2"} nameSection={"Most Popular Animes"}/>
+          <AnimeSection id={"section-3"} nameSection={"Most Read Mangas"}/>
+          <AnimeSection id={"section-4"} nameSection={"News"}/>
+        </div>
         <Footer />
       </div>
     </div>
