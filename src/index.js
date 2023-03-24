@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         element: <GenerosAnime/>
       },
       {
-        path: "generos/:generoId",
+        path: "generos/:genreName",
         element: <AnimesList/>,
       },
     ]
