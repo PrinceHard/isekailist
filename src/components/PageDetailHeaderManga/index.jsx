@@ -1,19 +1,35 @@
-import { detailsMangas } from "../../data/pageDetail"
-const PageDetailHeader = () => {
+import Erro from "../../pages/Erro"
+import useFetch from "../../hooks/useFetch"
+import Mangas from "../../pages/Mangas"
+const PageDetailHeader = (props) => {
+    const { data, error, isLoading } = useFetch(`https://api.jikan.moe/v4/manga/${props.id}/full`)
+    if (isLoading) {
+        return <p>Carregando...</p>
+    }
+    if (error) {
+        return <Erro />
+    }
+    const Manga = {
+        nome: data.data.title,
+        ano: data.data.published.prop.from.year,
+        volumes: data.data.volumes,
+        img: data.data.images.webp.large_image_url
+    }
+    if(Manga.volumes == null){
+        Manga.volumes = "em produção"
+    }
     return (
         <div className="iconePag">
             <div className="pageDetailHeaderContainer">
-                <h1 className="tituloCapa">{detailsMangas.titulo}</h1>
-                <h4 className="subTituloCapa">{detailsMangas.Ano + " - " + detailsMangas.volumes + " Volumes"}</h4>
+                <h1 className="tituloCapa">{Manga.nome}</h1>
+                <h4 className="subTituloCapa">{Manga.ano + " - " + "Volumes: "  + Manga.volumes}</h4>
 
                 <div className="boxVideo">
-                    <img className="imgCapa" src={detailsMangas.img} />
-                    <iframe width="800" height="450" src="https://www.youtube.com/embed/NtzDAmRhD9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style={{ borderRadius: "5px"}}></iframe>
+                    <img className="imgCapa" src={Manga.img} />
+                    
                 </div>
                 <div className="generoObjeto">
-                    <h5>{detailsMangas.genero.acao}</h5>
-                    <h5>{detailsMangas.genero.drama}</h5>
-                    <h5>{detailsMangas.genero.sobrenatural}</h5>
+                    {data.data.genres.map((generos) => (<h5>{generos.name}</h5>))}
                 </div>
             </div>
         </div>

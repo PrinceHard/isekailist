@@ -1,7 +1,19 @@
 import { detailsMangas } from "../../data/pageDetail"
 import { news } from "../../data/news"
 import { recomendacao } from "../../data/recomendacao"
-const PageDetailBody = () => {
+import Erro from "../../pages/Erro"
+import useFetch from "../../hooks/useFetch"
+const PageDetailBody = (props) => {
+    const { data, error, isLoading } = useFetch(`https://api.jikan.moe/v4/manga/${props.id}/full`)
+    if (isLoading) {
+        return <p>Carregando...</p>
+    }
+    if (error) {
+        return <Erro />
+    }
+    const Manga = {
+        sinopse: data.data.synopsis,
+    }
     return (
         <div className="detailInfoContainer">
             <div className="infoAndNewsContainer">
@@ -9,16 +21,15 @@ const PageDetailBody = () => {
                     <h2>Sinopse</h2>
                     <div className="boxComplementar">
                         <div className="containerComplementaMap">
-                            <p>{detailsMangas.sinopse}</p>
+                            <p>{Manga.sinopse}</p>
                             <div className="boxFichaTecnica">
                                 <h2>Informações da produção</h2>
-                                <h3>Autores <h4>{detailsMangas.autores}</h4></h3><br />
-                                <h3>Studio <h4>{detailsMangas.studio}</h4></h3><br />
+                                <h3>Autores {data.data.authors.map((autores) => (<h4>{autores.name}</h4>))}</h3><br />
                                 <h3>Fonte <h4>{detailsMangas.fonte}</h4></h3><br />
-                                <h3>Demografia <h4>{detailsMangas.demografia}</h4></h3>
+                                <h3>Demografia {data.data.demographics.map((Demografia) => (<h4>{Demografia.name}</h4>))}</h3>
                             </div>
                             <div className="boxSemelhantes">
-                                <h1>Mais itens semelhantes</h1>
+                                <h1>Recomendações</h1>
                                 <div className="imgSemelhantes">
                                     {recomendacao.map((detailsMangas) => (
                                         <div>

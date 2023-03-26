@@ -2,6 +2,7 @@ import './style.css';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 import Erro from '../../pages/Erro'
 import useFetch from '../../hooks/useFetch';
+import { Link } from 'react-router-dom';
 
 const MostPopularAnimes = ({ id, nameSection}) => {
 
@@ -32,7 +33,7 @@ const MostPopularAnimes = ({ id, nameSection}) => {
                 <MdChevronLeft size={40} onClick={slideLeft} className='arrow' />
                 <div id={id} className='slider-list'>
                     {data.data.map((card) => (
-                        <img key={card.mal_id} className='item-section' src={card.images.webp.large_image_url} alt={card.title} />
+                        <Link to={`anime/${card.mal_id}`} ><img key={card.mal_id} className='item-section' src={card.images.webp.large_image_url} alt={card.title} /></Link>
                     ))}
                 </div>
                 <MdChevronRight size={40} onClick={slideRight} className='arrow' />
