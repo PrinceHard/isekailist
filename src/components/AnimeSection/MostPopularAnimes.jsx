@@ -4,9 +4,10 @@ import Erro from '../../pages/Erro'
 import useFetch from '../../hooks/useFetch';
 import { Link } from 'react-router-dom';
 
-const MostPopularAnimes = ({ id, nameSection}) => {
+const MostPopularAnimes = () => {
 
     const { data, error, isLoading } = useFetch("https://api.jikan.moe/v4/top/anime");
+    const id = "section-2"
 
     const slideLeft = () => {
         var slider = document.getElementById(id)
@@ -28,7 +29,7 @@ const MostPopularAnimes = ({ id, nameSection}) => {
 
     return (
         <section>
-            <h2 className='name-section'>{nameSection}</h2>
+            <h2 className='name-section'>Animes mais populares</h2>
             <div className='list-section'>
                 <MdChevronLeft size={40} onClick={slideLeft} className='arrow' />
                 <div id={id} className='slider-list'>

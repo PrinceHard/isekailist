@@ -3,9 +3,11 @@ import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 import Erro from '../../pages/Erro'
 import useFetch from '../../hooks/useFetch';
 import { Link } from 'react-router-dom';
-const AnimeSection = ({ id, nameSection}) => {
+
+const AnimeSection = () => {
 
     const { data, error, isLoading } = useFetch("https://api.jikan.moe/v4/seasons/now");
+    const id = "section-1"
 
     const slideLeft = () => {
         var slider = document.getElementById(id)
@@ -27,7 +29,7 @@ const AnimeSection = ({ id, nameSection}) => {
 
     return (
         <section>
-            <h2 className='name-section'>{nameSection}</h2>
+            <h2 className='name-section'>Animes da temporada</h2>
             <div className='list-section'>
                 <MdChevronLeft size={40} onClick={slideLeft} className='arrow' />
                 <div id={id} className='slider-list'>

@@ -13,10 +13,10 @@ const App = () => {
       <div className='background'>
         <Header />
         <div className='slyderBox'>
-          <AnimesSeason id={"section-1"} nameSection={"Animes da temporada"}/>
-          <MostPopularAnimes  id={"section-2"} nameSection={"Animes mais populares"}/>
-          <MostPopularMangas id={"section-3"} nameSection={"Mangas mais populares"}/>
-          <Ads2023 id={"section-4"} nameSection={"Animes anunciados para 2023"}/>
+          <AnimesSeason/>
+          {/* <MostPopularAnimes/> */}
+          {/* <MostPopularMangas/> */}
+          <Ads2023/>
         </div>
         <Footer />
       </div>
