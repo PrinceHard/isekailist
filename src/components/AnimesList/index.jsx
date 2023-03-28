@@ -11,7 +11,7 @@ const AnimesList = () => {
 
     const genre = lista.filter(genre => genre.genreName == genreName)
 
-    const { data, error, isLoading } = useFetch(`https://api.jikan.moe/v4/anime?genres=${genre[0].id}&order_by=score&min_score=5.5&sort=desc`)
+    const { data, error, isLoading } = useFetch(`https://api.jikan.moe/v4/anime?genres=${genre[0].id}&order_by=score&min_score=5.5&sort=desc&limit=24`)
     if (isLoading) {
         return <p>Carregando...</p>
     }

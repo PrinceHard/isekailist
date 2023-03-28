@@ -52,7 +52,7 @@ const router = createBrowserRouter([
         element: <GenerosMangas/>
       },
       {
-        path: "generos/:generoId",
+        path: "generos/:genreName",
         element: <MangasList/>
       }
     ]
