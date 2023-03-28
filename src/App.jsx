@@ -14,8 +14,8 @@ const App = () => {
         <Header />
         <div className='slyderBox'>
           <AnimesSeason/>
-          <MostPopularAnimes/>
-          <MostPopularMangas/>
+          {/* <MostPopularAnimes/> */}
+          {/* <MostPopularMangas/> */}
           <Ads2023/>
         </div>
         <Footer />
