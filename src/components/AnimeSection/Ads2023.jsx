@@ -3,9 +3,10 @@ import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 import Erro from '../../pages/Erro'
 import useFetch from '../../hooks/useFetch';
 
-const Ads2023 = ({ id, nameSection}) => {
+const Ads2023 = () => {
 
     const { data, error, isLoading } = useFetch("https://api.jikan.moe/v4/seasons/upcoming");
+    const id = "section-4"
 
     const slideLeft = () => {
         var slider = document.getElementById(id)
@@ -27,7 +28,7 @@ const Ads2023 = ({ id, nameSection}) => {
 
     return (
         <section>
-            <h2 className='name-section'>{nameSection}</h2>
+            <h2 className='name-section'>Animes anunciados para 2023</h2>
             <div className='list-section'>
                 <MdChevronLeft size={40} onClick={slideLeft} className='arrow' />
                 <div id={id} className='slider-list'>
