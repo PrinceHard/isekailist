@@ -35,8 +35,8 @@ const MostPopularMangas = () => {
                 <MdChevronLeft size={40} onClick={slideLeft} className='arrow' />
                 <div id={id} className='slider-list'>
                     {data.data.map((card) => (
-                        <Link to={`manga/${card.mal_id}`}>
-                            <img key={card.mal_id} className='item-section' src={card.images.webp.large_image_url} alt={card.title}/>
+                        <Link key={card.mal_id} to={`manga/${card.mal_id}`}>
+                            <img className='item-section' src={card.images.webp.large_image_url} alt={card.title}/>
                         </Link>
                     ))}
                 </div>
