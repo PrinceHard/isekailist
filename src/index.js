@@ -15,55 +15,60 @@ import ErrorNotFund from './pages/ErrorNotFund';
 import Erro from './pages/Erro';
 import Noticias from './pages/Noticias'
 import PageDetailManga from './pages/PageDetailManga/index';
+import Search from './pages/Search';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
-    errorElement: <Erro/>
+    element: <App />,
+    errorElement: <Erro />
   },
   {
     path: "*",
-    element: <ErrorNotFund/>
+    element: <ErrorNotFund />
+  },
+  {
+    path: "busca/:titulo",
+    element: <Search />
   },
   {
     path: "animes",
-    element: <Animes/>,
+    element: <Animes />,
     children: [
       {
         path: "",
-        element: <GenerosAnime/>
+        element: <GenerosAnime />
       },
       {
         path: "generos/:genreName",
-        element: <AnimesList/>,
+        element: <AnimesList />,
       },
     ]
   },
   {
-      path:"anime/:animeId",
-      element: <PageDetail/> 
+    path: "anime/:animeId",
+    element: <PageDetail />
   },
   {
     path: "mangas",
-    element: <Mangas/>,
+    element: <Mangas />,
     children: [
       {
         path: "",
-        element: <GenerosMangas/>
+        element: <GenerosMangas />
       },
       {
         path: "generos/:genreName",
-        element: <MangasList/>
+        element: <MangasList />
       }
     ]
   },
   {
-    path:"manga/:mangaId",
-    element: <PageDetailManga/>
+    path: "manga/:mangaId",
+    element: <PageDetailManga />
   },
   {
     path: "noticias",
-    element: <Noticias/>
+    element: <Noticias />
   }
 ]);
 
