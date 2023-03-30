@@ -1,6 +1,6 @@
 import { details } from "../../data/pageDetail"
 import { news } from "../../data/news"
-import { recomendacao } from "../../data/recomendacao"
+import RecomendacaoAnime from "../RecomendacaoAnime"
 import Erro from "../../pages/Erro"
 import useFetch from "../../hooks/useFetch"
 const PageDetailBody = (props) => {
@@ -11,8 +11,8 @@ const PageDetailBody = (props) => {
     if (error) {
         return <Erro />
     }
-   
-    
+
+
     return (
         <div className="detailInfoContainer">
             <div className="infoAndNewsContainer">
@@ -28,20 +28,7 @@ const PageDetailBody = (props) => {
                                 <h3>Fonte <h4>{details.fonte}</h4></h3><br />
                                 <h3>Demografia {data.data.demographics.map((estudio) => (<h4>{estudio.name}</h4>))}</h3>
                             </div>
-                            <div className="boxSemelhantes">
-                                <h1>Recomendações</h1>
-                                <div className="imgSemelhantes">
-                                    {recomendacao.map((details) => (
-                                        <div>
-                                            <div className="caixaSemelhante">
-                                                <img src={details.img} alt="" />
-                                                <h3>{details.name}</h3>
-                                                <h4>⭐{details.score}</h4>
-                                            </div>
-                                        </div>)
-                                    )}
-                                </div>
-                            </div>
+                            <RecomendacaoAnime id={props.id}/>
                         </div>
                         <div>
                         </div>
