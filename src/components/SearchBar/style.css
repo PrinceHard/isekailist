@@ -15,7 +15,11 @@
     color: #fff;
     z-index: 10;
 }
-
+.buttonSearch{
+  all: unset;
+  cursor: pointer;
+  outline: revert;
+}
 .icon-search{
     position: absolute;
     top:0;

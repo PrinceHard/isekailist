@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.containerPagSearch{
+    width: 60vw;
+    margin: auto;
+    text-align: center;
+    min-height: 80vh;
+    margin-bottom: 300px;
+}
+.containerPagSearch h1{
+    margin: 2em;
+}
+.boxPagSearch{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+.tituloImgPagSearch{
+    color: white;
+    max-width: 200px;
+    margin: auto;
+}
+.h1PagSearch{
+    color: white;
+}
