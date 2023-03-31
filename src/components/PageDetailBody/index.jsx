@@ -16,11 +16,11 @@ const PageDetailBody = (props) => {
     return (
         <div className="detailInfoContainer">
             <div className="infoAndNewsContainer">
-                <div>
+                <div className="divSinopsePage">
                     <h2>Sinopse</h2>
                     <div className="boxComplementar">
                         <div className="containerComplementaMap">
-                            <p>{data.data.synopsis}</p>
+                            <p className="tamanhoSinopes">{data.data.synopsis}</p>
                             <div className="boxFichaTecnica">
                                 <h2>Informações da produção</h2>
                                 <h3>Produtores {data.data.producers.map((produtores) => (<h4>{produtores.name}</h4>))}</h3><br />
