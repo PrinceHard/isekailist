@@ -23,7 +23,7 @@ const SearchBar = () => {
 
     return (
         <div className='container'>
-            <form onSubmit="" className='pesquisa'>
+            <form  className='pesquisa'>
                 <input
                     placeholder='Pesquise um anime'
                     className='searchBar'
@@ -37,7 +37,7 @@ const SearchBar = () => {
                     </button>
                 </Link>
                 <datalist id='sugestao' className='barraDeAutoComplete'>
-                    {data.data.map((complite) => (<option value={complite.title}></option>))}
+                    {data.data.map((complite) => (<option key={complite.mal_id} value={complite.title}></option>))}
                 </datalist>
             </form>
         </div>

@@ -28,7 +28,7 @@ const PageDetailHeader = (props) => {
                 </div>
                 <div className="generoObjeto">
                     {data.data.genres.map((genero) => (
-                        <h5>{genero.name}</h5>
+                        <h5 key={genero.mal_id}>{genero.name}</h5>
                     ))}
                     
                 </div>

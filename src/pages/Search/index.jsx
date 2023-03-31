@@ -26,7 +26,8 @@ const Search = () => {
                 <h1 className="h1PagSearch">Resultados para {titulo}</h1>
                 <div className="boxPagSearch">
                     {data.data.slice(0,12).map((lista) => (
-                        <Link to={`../anime/${lista.mal_id}`}> <img src={lista.images.webp.large_image_url} alt={lista.title} /> 
+                        <Link to={`../anime/${lista.mal_id}`} 
+                        key={lista.mal_id} > <img src={lista.images.webp.large_image_url} alt={lista.title} /> 
                                 <div className="tituloImgPagSearch">
                                     <h3>{lista.title}</h3>
                                 </div>
