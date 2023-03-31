@@ -11,8 +11,6 @@ const Search = () => {
 
     const { data, error, isLoading } = useFetch(`https://api.jikan.moe/v4/anime?q=${titulo}`);
 
-    
-
     if (isLoading) {
         return <p>Carregando...</p>
     }
@@ -22,12 +20,13 @@ const Search = () => {
     return (
         <div className="background">
             <NavBar />
-            <div className="containerPagSearch">
+            <div className="tituloPagBusca">
                 <h1 className="h1PagSearch">Resultados para {titulo}</h1>
-                <div className="boxPagSearch">
-                    {data.data.slice(0,12).map((lista) => (
-                        <Link to={`../anime/${lista.mal_id}`} 
-                        key={lista.mal_id} > <img src={lista.images.webp.large_image_url} alt={lista.title} /> 
+            </div>
+            <div className="containerPagSearch">
+                <div className="containerResultadoPagSearch">
+                    {data.data.slice(0,24).map((lista) => (
+                        <Link to={`../anime/${lista.mal_id}`}> <img src={lista.images.webp.large_image_url} alt={lista.title} /> 
                                 <div className="tituloImgPagSearch">
                                     <h3>{lista.title}</h3>
                                 </div>

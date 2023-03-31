@@ -2,17 +2,22 @@
     margin: 0;
     padding: 0;
 }
+.tituloPagBusca{
+    text-align: center;
+}
+.tituloPagBusca h1{
+    margin: 2em;
+}
 .containerPagSearch{
-    width: 60vw;
-    margin: auto;
+    width: 100vw;
     text-align: center;
     min-height: 80vh;
     margin-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.containerPagSearch h1{
-    margin: 2em;
-}
-.boxPagSearch{
+.containerResultadoPagSearch{
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 20px;
