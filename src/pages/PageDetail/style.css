@@ -133,6 +133,10 @@
     }
 }
 @media(max-width: 1399px){
+    .pageDetailHeaderContainer {
+        margin: 0 5vw 4rem 5vw;
+        max-width: 100%;
+    }
     .infoAndNewsContainer{
         padding: 2rem 5vw;
     }

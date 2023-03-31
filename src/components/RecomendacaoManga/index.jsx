@@ -13,7 +13,7 @@ const RecomendacaoManga = (props) => {
         <div className="boxSemelhantes">
             <h1>Recomendações</h1>
             <div className="imgSemelhantes">
-                {data.data.slice(0, 12).map((details)  => (
+                {data.data.slice(0, 6).map((details)  => (
                     <Link to={`../manga/${details.entry.mal_id}`}>
                         <div className="caixaSemelhante">
                             <img src={details.entry.images.webp.large_image_url} alt="" />
@@ -21,6 +21,14 @@ const RecomendacaoManga = (props) => {
                         </div>
                     </Link>
                  ))}
+                 {data.data.slice(0, 2).map((details) => (  
+                    <Link to={`../anime/${details.entry.mal_id}`}>
+                        <div className="caixaSemelhanteEscondida">
+                            <img src={details.entry.images.webp.large_image_url} alt="" />
+                            <h3 className="tituloRecomendacao">{details.entry.title}</h3>
+                        </div>
+                    </Link>
+                ))}
             </div>
         </div>
     )
