@@ -23,7 +23,7 @@ const AnimesList = () => {
             <h1>{genre[0].name}</h1>
             <div className="genero">
                 {data.data.map((anime) => (
-                    <div key={anime.mal_id}>
+                    <div key={anime.mal_id} className="containerCardAnimeList">
                         <Link to={`/anime/${anime.mal_id}`}><img src={anime.images.webp.large_image_url} alt={anime.title} /></Link>
                     </div>
                 ))}
