@@ -24,6 +24,8 @@ const ImageSlider = ({ slides }) => {
         height: '100%',
         backgroundImage: `url(${slides[currentIndex].url})`,
         filter: 'brightness(55%)',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'
     }
 
     return (
