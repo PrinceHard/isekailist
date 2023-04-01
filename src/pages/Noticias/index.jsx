@@ -8,16 +8,14 @@ const Noticias = () => {
         <div className="background">
             <NavBar />
             <div className="noticiasFundoBranco">
-                <div className="bannerNoticias"></div>
-                <h1>Notícias</h1>
-                <div className="containerScanNews">
-                    <Scans />
-                    <div className="noticiasBox">
-                        {noticias.map((noticia) => (
-                            <div><a href={noticia.link} target="_blank"><img src={noticia.noticia} alt="" /></a></div>
-                        ))}
-                    </div>
-                </div>
+                <div className="bannerNoticias"/>
+                    <h1>Notícias</h1>
+                        <div className="noticiasBox">
+                            {noticias.map((noticia) => (
+                                <div><a href={noticia.link} target="_blank"><img src={noticia.noticia} alt="" /></a></div>
+                            ))}
+                        </div>
+                
             </div>
             <Footer />
         </div>
