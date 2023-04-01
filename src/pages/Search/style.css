@@ -3,25 +3,34 @@
     padding: 0;
 }
 .tituloPagBusca{
-    text-align: center;
+    margin-left: 3.5%;
 }
 .tituloPagBusca h1{
     margin: 2em;
 }
+.tituloGeneroSearch{
+    text-align: center;
+    margin: 1%;
+    margin-bottom: 6%;
+}
+.tituloLevelDoisSearch{
+    color: white;
+    font-size: 2em;
+}
 .containerPagSearch{
     width: 100vw;
     text-align: center;
-    min-height: 80vh;
-    margin-bottom: 300px;
+    margin-top: 4%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .containerResultadoPagSearch{
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 20px;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 30px;
 }
+
 .tituloImgPagSearch{
     color: white;
     max-width: 200px;
@@ -29,4 +38,7 @@
 }
 .h1PagSearch{
     color: white;
+}
+.boxGeralSearch{
+    margin-bottom: 10%;
 }
