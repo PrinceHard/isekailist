@@ -8,7 +8,7 @@ section{
     position: relative;
     margin: 0 auto;
     align-items: center;
-    width: calc(100vw - 10vw);
+    width: calc(100vw - 1vw);
     height: 380px;
 }
 
