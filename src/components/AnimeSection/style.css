@@ -38,8 +38,13 @@ section{
     cursor: pointer;
     z-index: 1;
     display: inline-block;
+    position: relative;
 }
-
+.item-section:hover{
+    top: -2px;
+    box-shadow:0 2px 2px #666;
+    filter:  brightness(70%);
+}
 .name-section {
     max-width: 100%;
     color: white;

@@ -26,7 +26,6 @@ const AnimeSection = () => {
     if (error) {
         return <Erro />
     }
-
     return (
         <section>
             <h2 className='name-section'>Animes da temporada</h2>
@@ -34,8 +33,8 @@ const AnimeSection = () => {
                 <MdChevronLeft size={40} onClick={slideLeft} className='arrow' />
                 <div id={id} className='slider-list'>
                     {data.data.map((card) => (
-                        <Link key={card.mal_id}  to={`anime/${card.mal_id}`}>
-                            <img className='item-section' src={card.images.webp.large_image_url} alt={card.title} />
+                        <Link key={card.mal_id} to={`anime/${card.mal_id}`}>
+                                <img className='item-section' src={card.images.webp.large_image_url} alt={card.title}/>
                         </Link>
                     ))}
                 </div>
