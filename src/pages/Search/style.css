@@ -42,3 +42,8 @@
 .boxGeralSearch{
     margin-bottom: 10%;
 }
+@media(max-width: 1281px){
+    .containerResultadoPagSearch{
+        grid-template-columns: auto auto auto auto;
+    }
+}
