@@ -33,8 +33,10 @@ const AnimeSection = () => {
                 <MdChevronLeft size={40} onClick={slideLeft} className='arrow' />
                 <div id={id} className='slider-list'>
                     {data.data.map((card) => (
-                        <Link key={card.mal_id} to={`anime/${card.mal_id}`}>
-                                <img className='item-section' src={card.images.webp.large_image_url} alt={card.title}/>
+                        <Link key={card.mal_id} to={`anime/${card.mal_id}`}>             
+                                <div key={card.mal_id} style={{ backgroundImage: `url(${card.images.webp.large_image_url})`, backgroundSize: "cover"}} className='item-section'>
+                                    
+                                </div>
                         </Link>
                     ))}
                 </div>

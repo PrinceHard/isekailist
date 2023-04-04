@@ -30,19 +30,16 @@ section{
 .slider-list::-webkit-scrollbar {
     display: none;
 }
-
 .item-section {
     width: 220px;
     height: 320px;
     border-radius: 2rem;
     cursor: pointer;
-    z-index: 1;
-    display: inline-block;
-    position: relative;
+    filter: brightness(80%);
 }
 .item-section:hover{
     top: -2px;
-    filter:  brightness(70%);
+    filter: brightness(100%);
 }
 .name-section {
     max-width: 100%;

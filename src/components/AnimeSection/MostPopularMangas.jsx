@@ -24,8 +24,8 @@ const MostPopularMangas = () => {
         return <p>Carregando...</p>
     }
 
-    if(error){
-        return <Erro/>
+    if (error) {
+        return <Erro />
     }
 
     return (
@@ -36,7 +36,8 @@ const MostPopularMangas = () => {
                 <div id={id} className='slider-list'>
                     {data.data.map((card) => (
                         <Link key={card.mal_id} to={`manga/${card.mal_id}`}>
-                            <img className='item-section' src={card.images.webp.large_image_url} alt={card.title}/>
+                            <div key={card.mal_id} style={{ backgroundImage: `url(${card.images.webp.large_image_url})`, backgroundSize: "cover" }} className='item-section'>
+                            </div>
                         </Link>
                     ))}
                 </div>
