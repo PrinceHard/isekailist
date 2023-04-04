@@ -1,4 +1,4 @@
-import { detailsMangas } from "../../data/pageDetail"
+
 import { news } from "../../data/news"
 import RecomendacaoManga from "../RecomendacaoManga"
 import Erro from "../../pages/Erro"
@@ -25,7 +25,7 @@ const PageDetailBody = (props) => {
                             <div className="boxFichaTecnica">
                                 <h2>Informações da produção</h2>
                                 <h3>Autores {data.data.authors.map((autores) => (<h4>{autores.name}</h4>))}</h3><br />
-                                <h3>Fonte <h4>{detailsMangas.fonte}</h4></h3><br />
+                                <h3>Fonte <h4>Manga</h4></h3><br />
                                 <h3>Demografia {data.data.demographics.map((Demografia) => (<h4>{Demografia.name}</h4>))}</h3>
                             </div>
                             <RecomendacaoManga id={props.id}/>

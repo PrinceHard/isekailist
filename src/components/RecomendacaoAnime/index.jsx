@@ -21,7 +21,7 @@ const RecomendacaoAnime = (props) => {
                         </div>
                     </Link>
                 ))}
-                {data.data.slice(0, 2).map((details) => (  
+                {data.data.slice(6, 8).map((details) => (  
                     <Link to={`../anime/${details.entry.mal_id}`}>
                         <div className="caixaSemelhanteEscondida">
                             <img src={details.entry.images.webp.large_image_url} alt="" />

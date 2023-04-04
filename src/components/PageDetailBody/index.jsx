@@ -1,4 +1,4 @@
-import { details } from "../../data/pageDetail"
+
 import { news } from "../../data/news"
 import RecomendacaoAnime from "../RecomendacaoAnime"
 import Erro from "../../pages/Erro"
@@ -25,7 +25,7 @@ const PageDetailBody = (props) => {
                                 <h2>Informações da produção</h2>
                                 <h3>Produtores {data.data.producers.map((produtores) => (<h4>{produtores.name}</h4>))}</h3><br />
                                 <h3>Studio {data.data.studios.map((estudio) => (<h4>{estudio.name}</h4>))}</h3><br />
-                                <h3>Fonte <h4>{details.fonte}</h4></h3><br />
+                                <h3>Fonte <h4>Manga</h4></h3><br />
                                 <h3>Demografia {data.data.demographics.map((estudio) => (<h4>{estudio.name}</h4>))}</h3>
                             </div>
                             <RecomendacaoAnime id={props.id}/>
