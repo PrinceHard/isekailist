@@ -42,7 +42,12 @@
 .boxGeralSearch{
     margin-bottom: 10%;
 }
-@media(max-width: 1281px){
+@media(max-width: 1700px){
+    .containerResultadoPagSearch{
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+@media(max-width: 1445px){
     .containerResultadoPagSearch{
         grid-template-columns: auto auto auto auto;
     }
