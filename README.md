@@ -1,1 +1,2 @@
 # Sekailist
+linux heric
