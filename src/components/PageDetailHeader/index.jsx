@@ -23,8 +23,8 @@ const PageDetailHeader = (props) => {
                 <h1 className="tituloCapa">{Anime.titulo}</h1>
                 <h4 className="subTituloCapa">{Anime.ano + " - " + Anime.tipo}</h4>
                 <div className="boxVideo">
-                    <img className="imgCapa" src={Anime.img} />
-                    <iframe className="videoTrailer" width="800" height="450" src={Anime.video} title="YouTube video player"   frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style={{ borderRadius: "5px" }}></iframe>
+                    <img className="imgCapa" src={Anime.img} alt="" />
+                    <iframe className="videoTrailer" width="800" height="450" src={Anime.video} title="YouTube video player"   frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen style={{ borderRadius: "5px" }}></iframe>
                 </div>
                 <div className="generoObjeto">
                     {data.data.genres.map((genero) => (

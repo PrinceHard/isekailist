@@ -3,6 +3,7 @@ import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 import Erro from '../../pages/Erro'
 import useFetch from '../../hooks/useFetch';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 
 const MostPopularMangas = () => {

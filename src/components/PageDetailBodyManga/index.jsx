@@ -24,9 +24,9 @@ const PageDetailBody = (props) => {
                             <p>{Manga.sinopse}</p>
                             <div className="boxFichaTecnica">
                                 <h2>Informações da produção</h2>
-                                <h3>Autores {data.data.authors.map((autores) => (<h4>{autores.name}</h4>))}</h3><br />
-                                <h3>Fonte <h4>{detailsMangas.fonte}</h4></h3><br />
-                                <h3>Demografia {data.data.demographics.map((Demografia) => (<h4>{Demografia.name}</h4>))}</h3>
+                                <h3>Autores {data.data.authors.map((autores) => (<span>{autores.name}</span>))}</h3><br />
+                                <h3>Fonte <span>{detailsMangas.fonte}</span></h3><br />
+                                <h3>Demografia {data.data.demographics.map((Demografia) => (<span>{Demografia.name}</span>))}</h3>
                             </div>
                             <RecomendacaoManga id={props.id}/>
                         </div>
@@ -37,8 +37,8 @@ const PageDetailBody = (props) => {
                 <div className="noticiasContainer">
                     <h3 className="tituloNoticias">Notícias</h3>
                     {news.map((noticia) => (
-                        <div className="boxNoticia">
-                            <a href={noticia.link} target="_blank"><img src={noticia.noticia} alt="" /></a>
+                        <div key={noticia.noticia} className="boxNoticia">
+                            <a href={noticia.link} target="_blank" rel="noreferrer"><img src={noticia.noticia} alt="" /></a>
                         </div>)
                     )}
                 </div>
