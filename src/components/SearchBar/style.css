@@ -1,0 +1,43 @@
+.container{
+    position: relative;
+    z-index: 10;
+}
+
+.searchBar{
+    height: 36px;
+    max-width: 525px;
+    width: 30vw;
+    padding: 10px;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 6px;
+    outline: none;
+    color: #fff;
+    z-index: 10;
+}
+.buttonSearch{
+  all: unset;
+  cursor: pointer;
+  outline: revert;
+}
+.icon-search{
+    position: absolute;
+    top:0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    z-index: 10;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+  }

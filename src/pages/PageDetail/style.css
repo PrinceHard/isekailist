@@ -1,0 +1,156 @@
+.iconePag {
+    margin-top: 4rem;
+    color: white;
+}
+
+.pageDetailHeaderContainer {
+    margin: 0 12vw 4rem 12vw;
+    max-width: 100%;
+}
+
+.infoAndNewsContainer{
+    display: flex;
+    padding: 2rem 12vw;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+
+.tituloCapa {
+    font-size: 3rem;
+}
+
+.subTituloCapa {
+    margin: 20px 10px;
+    font-size: 18px;
+}
+
+.imgCapa {
+    width: 318px;
+    height: 450px;
+    margin-right: 20px;
+}
+
+.boxVideo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.generoObjeto {
+    display: flex;
+    margin-top: 10px;
+}
+
+.generoObjeto h5 {
+    margin-right: 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: solid rgb(150, 150, 150);
+    padding: 10px;
+}
+
+.detailInfoContainer {
+    width: 100%;
+    background-color: white;
+}
+
+.boxComplementar {
+    max-width: 50vw;
+    color: black;
+}
+
+.containerComplementaMap {
+    margin-top: 20px;
+    min-width: 700px;
+    grid-row: 1/6;
+}
+
+.containerComplementaMap p {
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.boxFichaTecnica {
+    margin-top: 2rem;
+}
+
+.boxFichaTecnica h2{
+    margin-bottom: 1rem;
+}
+
+.boxFichaTecnica h4 {
+    font-weight: 500;
+}
+
+.boxSemelhantes {
+    margin-top: 60px;
+}
+
+.tituloNoticias {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.noticiasContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgSemelhantes {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 50px;
+    gap: 10px;
+    max-width: 550px;
+}
+
+.caixaSemelhante {
+    text-align: center;
+}
+.caixaSemelhanteEscondida{
+    text-align: center;
+}
+
+.tituloRecomendacao {
+    margin-left: 20px;
+    color: black;
+}
+@media(max-width: 1799px){
+    .imgSemelhantes {
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        margin-top: 50px;
+        gap: 10px;
+        max-width: 550px;
+    }
+    .caixaSemelhanteEscondida{
+        display: none;
+    }
+}
+@media(max-width: 1399px){
+    .pageDetailHeaderContainer {
+        margin: 0 5vw 4rem 5vw;
+        max-width: 100%;
+    }
+    .infoAndNewsContainer{
+        padding: 2rem 5vw;
+    }
+    .boxComplementar{
+        width: 100%;
+    }
+    .containerComplementaMap{
+        width: 100%;
+    }
+    .tamanhoSinopes{
+       max-width: 85%;
+    }
+    .imgSemelhantes img {
+        max-width: 200px;
+        max-height: 311px;
+    }
+}

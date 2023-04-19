@@ -1,0 +1,66 @@
+
+.animes-container{
+    margin: 5rem auto;
+    color: white;
+    text-align: center;
+}
+.title-generos{
+    position: relative;
+    z-index: 1;
+    top: 55%;
+}
+.genero-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 3rem auto;
+}
+.card-genero{
+    border-radius: 10px;
+    color: white;
+    background-color: #333;
+    width: 290px;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.genero{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    max-width: 100vw;
+    margin: 3rem auto;   
+}
+.genero a, img{
+    width: 250px;
+    height: 350px;
+    border-radius: 0.5rem;
+}
+@media (max-width: 1619px){
+    .genero{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 1330px){
+    .genero-container{
+        gap: 2px;
+    }
+    .card-genero{
+        width: 270px;
+        height: 270px;
+    }
+    .genero{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .genero a, img{
+        width: 230px;
+        height: 330px;
+    }
+}
+@media(max-width: 1154px){
+    .genero-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

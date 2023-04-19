@@ -1,0 +1,98 @@
+export const lista = [
+    {
+        id: 1,
+        name: "Acão",
+        img: "http://localhost:3000/acao.webp",
+        genreName: "acao",
+    },
+    {
+        id: 2,
+        name: "Aventura",
+        img: "http://localhost:3000/aventura.webp",
+        genreName: "aventura",
+    },
+    {
+        id: 5,
+        name: "Avant Garde",
+        img: "http://localhost:3000/avant-garde.webp",
+        genreName: "avant-garde",
+    },
+    {
+        id: 7,
+        name: "Mistério",
+        img: "http://localhost:3000/misterio.webp",
+        genreName: "misterio",
+    },
+    {
+        id: 37,
+        name: "Sobrenatural",
+        img: "http://localhost:3000/sobrenatural.webp",
+        genreName: "sobrenatural",
+    },
+    {
+        id: 4,
+        name: "Comédia",
+        img: "http://localhost:3000/comedia.webp",
+        genreName: "comedia",
+    },
+    {
+        id: 8,
+        name: "Drama",
+        img: "http://localhost:3000/drama.webp",
+        genreName: "drama",
+    },
+    {
+        id: 9,
+        name: "Fan Service",
+        img: "http://localhost:3000/fanservice.webp",
+        genreName: "fan-service",
+    },
+    {
+        id: 10,
+        name: "Fantasia",
+        img: "http://localhost:3000/fantasia.webp",
+        genreName: "fantasia",
+    },
+    {
+        id: 14,
+        name: "Terror",
+        img: "http://localhost:3000/terror.webp",
+        genreName: "terror",
+    },
+    {
+        id: 40,
+        name: "Psicológico",
+        img: "http://localhost:3000/psicologico.webp",
+        genreName: "psicologico",
+    },
+    {
+        id: 22,
+        name: "Romance",
+        img: "http://localhost:3000/romance.webp",
+        genreName: "romance",
+    },
+    {
+        id: 24,
+        name: "Sci-Fi",
+        img: "http://localhost:3000/scifi.webp",
+        genreName: "sci-fi",
+    },
+    {
+        id: 36,
+        name: "Slice of Life",
+        img: "http://localhost:3000/sliceoflife.webp",
+        genreName: "slice-of-life",
+    },
+    {
+        id: 30,
+        name: "Sport",
+        img: "http://localhost:3000/sport.webp",
+        genreName: "sport",
+    },
+    {
+        id: 42,
+        name: "Seinen",
+        img: "http://localhost:3000/seinen.webp",
+        genreName: "seinen",
+    },
+]

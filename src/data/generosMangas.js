@@ -1,0 +1,98 @@
+export const lista = [
+    {
+        id: 1,
+        name: "Acão",
+        img: "http://localhost:3000/manga-acao.webp",
+        genreName: "acao",
+    },
+    {
+        id: 2,
+        name: "Aventura",
+        img: "http://localhost:3000/manga-aventura.webp",
+        genreName: "aventura",
+    },
+    {
+        id: 5,
+        name: "Avant Garde",
+        img: "http://localhost:3000/manga-avant-garde.webp",
+        genreName: "avant-garde",
+    },
+    {
+        id: 7,
+        name: "Mistério",
+        img: "http://localhost:3000/manga-misterio.webp",
+        genreName: "misterio",
+    },
+    {
+        id: 37,
+        name: "Sobrenatural",
+        img: "http://localhost:3000/manga-sobrenatural.webp",
+        genreName: "sobrenatural",
+    },
+    {
+        id: 4,
+        name: "Comédia",
+        img: "http://localhost:3000/manga-comedia.webp",
+        genreName: "comedia",
+    },
+    {
+        id: 8,
+        name: "Drama",
+        img: "http://localhost:3000/manga-drama.webp",
+        genreName: "drama",
+    },
+    {
+        id: 9,
+        name: "Fan Service",
+        img: "http://localhost:3000/manga-fanservice.webp",
+        genreName: "fan-service",
+    },
+    {
+        id: 10,
+        name: "Fantasia",
+        img: "http://localhost:3000/manga-fantasia.webp",
+        genreName: "fantasia",
+    },
+    {
+        id: 14,
+        name: "Terror",
+        img: "http://localhost:3000/manga-terror.webp",
+        genreName: "terror",
+    },
+    {
+        id: 40,
+        name: "Psicológico",
+        img: "http://localhost:3000/manga-psicologico.webp",
+        genreName: "psicologico",
+    },
+    {
+        id: 22,
+        name: "Romance",
+        img: "http://localhost:3000/manga-romance.webp",
+        genreName: "romance",
+    },
+    {
+        id: 24,
+        name: "Sci-Fi",
+        img: "http://localhost:3000/manga-scifi.webp",
+        genreName: "sci-fi",
+    },
+    {
+        id: 36,
+        name: "Slice of Life",
+        img: "http://localhost:3000/manga-sliceoflife.webp",
+        genreName: "slice-of-life",
+    },
+    {
+        id: 30,
+        name: "Sport",
+        img: "http://localhost:3000/manga-sport.webp",
+        genreName: "sport",
+    },
+    {
+        id: 42,
+        name: "Seinen",
+        img: "http://localhost:3000/manga-seinen.webp",
+        genreName: "seinen",
+    },
+]
