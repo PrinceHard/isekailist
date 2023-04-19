@@ -23,10 +23,10 @@ const PageDetailBody = (props) => {
                             <p className="tamanhoSinopes">{data.data.synopsis}</p>
                             <div className="boxFichaTecnica">
                                 <h2>Informações da produção</h2>
-                                <h3>Produtores {data.data.producers.map((produtores) => (<h4>{produtores.name}</h4>))}</h3><br />
-                                <h3>Studio {data.data.studios.map((estudio) => (<h4>{estudio.name}</h4>))}</h3><br />
-                                <h3>Fonte <h4>{details.fonte}</h4></h3><br />
-                                <h3>Demografia {data.data.demographics.map((estudio) => (<h4>{estudio.name}</h4>))}</h3>
+                                <h3>Produtores {data.data.producers.map((produtor) => (<span key={produtor.name}>{produtor.name}</span>))}</h3><br />
+                                <h3>Studio {data.data.studios.map((estudio) => (<span key={estudio.name}>{estudio.name}</span>))}</h3><br />
+                                <h3>Fonte <span>{details.fonte}</span></h3><br />
+                                <h3>Demografia {data.data.demographics.map((demographic) => (<span key={demographic.name}>{demographic.name}</span>))}</h3>
                             </div>
                             <RecomendacaoAnime id={props.id}/>
                         </div>
@@ -37,7 +37,7 @@ const PageDetailBody = (props) => {
                 <div className="noticiasContainer">
                     <h3 className="tituloNoticias">Notícias</h3>
                     {news.map((noticia) => (
-                        <div className="boxNoticia">
+                        <div key={noticia.noticia} className="boxNoticia">
                             <a href={noticia.link} target="_blank" rel="noreferrer"><img src={noticia.noticia} alt="" /></a>
                         </div>)
                     )}
