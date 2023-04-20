@@ -15,7 +15,7 @@
 .bannerNoticias {
     min-width: 100vw;
     height: 300px;
-    background-image: url("http://localhost:3000/anime-garden.jpg");    
+    background-image: url("https://sekailist.vercel.app//anime-garden.jpg");    
     background-position: center;
     background-size: cover;
 }
