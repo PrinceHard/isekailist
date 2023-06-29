@@ -29,7 +29,6 @@ const SearchBar = () => {
                     className='searchBar'
                     value={inputValue}
                     onChange={handleChange}
-                    list="sugestao"
                 />
                 <Link to={"/busca/" + inputValue} >
                     <button type='submit' className='buttonSearch'>
